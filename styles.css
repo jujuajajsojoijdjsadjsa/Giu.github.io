@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    color: #000;
+    background-image: url('https://fondosmil.com/fondo/7766.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.main-title {
+    font-size: 48px;
+    color: #000000;
+    margin: 0;
+    padding: 10px;
+}
+
+main {
+    width: 100%;
+    max-width: 390x844px; /* Ajusta este valor para que se adapte a una pantalla de 6.2 pulgadas */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(50% - 20px); /* Ahora solo hay dos cartas por fila */
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #020202;
+    background-color: #FF69B4; /* Fondo rosa chicle oscuro */
+}
+
+.card-content {
+    font-size: 24px;
+}
+
+.floating-comment {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff4500;
+    color: #fff;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos adicionales para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+
+    .card {
+        width: calc(100% - 20px); /* Una carta por fila en dispositivos móviles */
+    }
+
+    .card-content {
+        font-size: 18px;
+    }
+}
